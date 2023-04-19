@@ -8,8 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Diagnostics;
-//using Microsoft.AspNetCore.Cors;
-//using System.Web.Http.Cors;
+
 
 
 namespace Assignment3.Controllers
@@ -219,7 +218,6 @@ namespace Assignment3.Controllers
         /// FORM DATA / POST DATA / REQUEST BODY 
         /// </example>
         [HttpPost]
-        //[EnableCors(origins: "*", methods: "*", headers: "*")]
         public void UpdateTeacher(int id, [FromBody] Teacher TeacherInfo)
         {
             //Create an instance of a connection
